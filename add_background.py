@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Adding a background on pictures.
+The module is used for dataset augmentation by changing an image background.
 """
 
 import os

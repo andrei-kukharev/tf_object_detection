@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Running two neural networks simultaneously.
+Running two neural networks simultaneously on the Raspberry-Pi platform.
 The first NN is used for the prediction of an object presence (objectness).
 The second NN is used for the prediction of the object location.
+The NNs are loaded from files in protocol buffer format (pb).
 Platform: Raspberry Pi 3.
 """
 
@@ -20,8 +21,8 @@ import io
 from picamera import PiCamera
 from picamera.array import PiRGBArray
 
-PB1_PATH = '../pb/model_MobileNetV2_single-72-0.996-0.996[0.840].pb' 
-PB2_PATH = PB1_PATH
+PB1_PATH = '../pb/model_1.pb' 
+PB2_PATH = '../pb/model_2.pb' 
 INPUT_SIZE_1 = [3, 128, 128]
 INPUT_SIZE_2 = [3, 128, 128]
 INPUT_NODE_1 = 'input'
