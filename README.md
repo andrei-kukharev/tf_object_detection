@@ -1,2 +1,2 @@
 # tf_object_detection
-object detection and classification with tensorflow and keras
+Object detection and image classification with Tensorflow and Keras
